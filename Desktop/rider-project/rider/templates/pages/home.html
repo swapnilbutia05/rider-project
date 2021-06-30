@@ -288,43 +288,6 @@
 <!-- Rent car end -->
 
 
-<!-- Our team start -->
-<div class="our-team content-area bg-grea-3">
-    <div class="container">
-        <!-- Main title -->
-        <div class="main-title">
-            <h1>Executive <span>Team</span></h1>
-            <p>Riders' Team</p>
-        </div>
-        <!-- Slick slider area start -->
-        <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
-              {% for team in teams %}
-                <div class="slick-slide-item">
-                    <div class="team-1">
-                        <div class="photo">
-                            <a href="#">
-                                <img src="{{team.photo.url}}"="team-1" class="img-fluid">
-                            </a>
-                            <div class="social-list clearfix">
-                                <a href="{{team.facebook_link}}" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="{{team.twitter_link}}" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="{{team.google_plus_link}}" class="google-bg"><i class="fa fa-google"></i></a>
-                            </div>
-                        </div>
-                        <div class="details">
-                            <h4><a href="team-detail.html">{{team.first_name}} {{team.last_name}}</a></h4>
-                            <h5>{{team.designation}}</h5>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Our team end -->
-
 
 <!-- Car Overview Modal -->
 <div class="car-model-2">
